@@ -9,12 +9,14 @@
  *   ln -sfn ~/.local/state/omarchy/current/theme/gtk.css ~/.config/gtk-3.0/gtk.css
  *   ln -sfn ~/.local/state/omarchy/current/theme/gtk.css ~/.config/gtk-4.0/gtk.css
  *
- * `background` carries alpha so GTK windows sit on the same blurred glass as
- * the terminals; `hyprland.lua` tags them with Omarchy's `default-opacity`
- * rule, and `blur.ignore_opacity` makes the compositor blur what shows through.
+ * `background` is opaque: window translucency is the compositor's job
+ * (Omarchy fades every window to 0.985 / 0.96 through its `default-opacity`
+ * rule), and a theme that paints its own alpha stacks on top of that fade
+ * and reads differently from every non-GTK window. Glass is opt-in -- see
+ * the README.
  */
 
-@define-color background     alpha(#16181a, 0.9);
+@define-color background     #16181a;
 @define-color solid_background #16181a;
 @define-color surface        #1e2124;
 @define-color surface_dim    #111214;
