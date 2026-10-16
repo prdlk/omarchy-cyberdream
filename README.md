@@ -189,6 +189,7 @@ none of them are applied by installing the theme.
 | App | File | Destination |
 | --- | --- | --- |
 | bat / delta syntax | `extras/cyberdream.tmTheme` | `~/.config/bat/themes/cyberdream.tmTheme`, then `bat cache --build` |
+| Brave | `extras/brave/` | `sudo rm -r /etc/brave/policies/managed`, refresh policies at `brave://policy`, then **Load unpacked** this folder in `brave://extensions` (Developer mode). Omarchy's single `BrowserThemeColor` seed fixes the brightness of Brave's toolbar color, and Brave paints every inactive vertical tab as a pill in that color. This theme sets the toolbar to the background (`#16181a`), so inactive tabs lose the pill and keep a muted title, and the active tab takes `selection`. The policy blocks theme extensions; once the directory is gone, Omarchy theme switches stop recoloring Brave until you reinstall it with `omarchy install browser`. |
 | delta | `extras/delta.gitconfig` | append to `~/.config/git/config`, then set `[delta] features = cyberdream` |
 | fish | `extras/fish.theme` | `~/.config/fish/themes/cyberdream.theme`, then `fish_config theme choose cyberdream` |
 | gitui | `extras/gitui.ron` | `~/.config/gitui/theme.ron` |
