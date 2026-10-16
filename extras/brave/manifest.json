@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "Cyberdream",
+  "version": "1.0.0",
+  "description": "Cyberdream for Brave: quiet inactive vertical tabs, selection-grey active tab.",
+  "theme": {
+    "colors": {
+      "frame": [17, 18, 20],
+      "frame_inactive": [17, 18, 20],
+      "toolbar": [22, 24, 26],
+      "toolbar_text": [255, 255, 255],
+      "toolbar_button_icon": [123, 132, 150],
+      "background_tab": [60, 64, 72],
+      "background_tab_inactive": [60, 64, 72],
+      "tab_text": [255, 255, 255],
+      "tab_background_text": [123, 132, 150],
+      "tab_background_text_inactive": [123, 132, 150],
+      "bookmark_text": [123, 132, 150],
+      "omnibox_background": [30, 33, 36],
+      "omnibox_text": [255, 255, 255],
+      "ntp_background": [22, 24, 26],
+      "ntp_text": [255, 255, 255],
+      "ntp_link": [94, 161, 255]
+    }
+  }
+}
