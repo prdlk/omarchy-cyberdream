@@ -47,6 +47,9 @@ bright_cyan    = "#5ef1ff"
 pink    = "#ff5ea0"
 fuchsia = "#ff5ef1"
 
-# Window/notification/menu borders sweep blue -> cyan.
-hyprland_active_border   = "accent cyan 45deg"
+# Window/notification/menu borders sweep blue -> cyan. Hyprland gets the same
+# hues at 60% alpha (99) so the slowly rotating border (borderangle loop in
+# hypr/looknfeel.lua) stays in the periphery; the shell's shell_gradient drops
+# alpha, so bar/menu/notification borders stay full strength.
+hyprland_active_border   = "rgba(5ea1ff99) rgba(5ef1ff99) 45deg"
 hyprland_inactive_border = "selection"
